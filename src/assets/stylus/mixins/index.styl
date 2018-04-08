@@ -1,0 +1,34 @@
+flexLayout(dir = row, justify-content = center, align-items = center, iswrap = nowrap) {
+  display flex
+  flex-direction dir
+  justify-content justify-content
+  align-items align-items
+  flex-wrap iswrap
+}
+
+full() {
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  left 0
+}
+
+textOverflow() {
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+}
+
+lineLimit(line = 2) {
+  display -webkit-box
+  overflow hidden
+  -webkit-line-clamp line
+  -webkit-box-orient vertical
+}
+
+card() {
+  padding 24px
+  background-color $white
+  box-shadow 4px 4px 20px 0 alpha($black, .01)
+}

@@ -1,0 +1,118 @@
+@font-face {
+  font-family "Helvetica Neue For Number"
+  src local("Helvetica Neue")
+  unicode-range U+30-39
+}
+
+// Color
+$blue                         = #409EFF
+$green                        = #67C23A
+$yellow                       = #EB9E05
+$red                          = #FA5555
+$purple                       = #ed0a75
+$grey                         = #878D99
+$black                        = #000
+$white                        = #fff
+$text-color                   = #5A5E66
+$text-color-head              = #2D2F33
+$text-color-secondary         = #878D99
+$text-color-placeholder       = #B4BCCC
+$border-color                 = #D8DCE6
+$border-color-2               = #DFE4ED
+$border-color-3               = #E6EBF5
+$border-color-4               = #EDF2FC
+
+$base-color                   = $blue
+$body-background-color        = #f8f8f8
+
+// Font family
+// $font-family-base             = Helvetica Neue For Number,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif
+$font-family-base             = AvenirNext-Regular,Helvetica Neue,lucida grande,PingFangHK-Light,STHeiti,Heiti SC,Hiragino Sans GB,Microsoft JhengHei,Microsoft Yahei,SimHei,WenQuanYi Micro Hei,Droid Sans,Roboto,Helvetica,Tahoma,Arial,"sans-serif"
+$font-family-headings         = Montserrat,$font-family-base
+$font-family-article          = $font-family-base
+$font-family-code             = Karla,consolas, Menlo,$font-family-base
+$font-family-markdown         = -apple-system, BlinkMacSystemFont, "opensans", "Optima", "Microsoft Yahei", sans-serif
+
+// Media queries breakpoints
+// Extra small screen / phone
+$screen-xs                    = 480px
+$screen-xs-min                = $screen-xs
+
+// Small screen / tablet
+$screen-sm                    = 768px
+$screen-sm-min                = $screen-sm
+
+// Medium screen / desktop
+$screen-md                    = 992px
+$screen-md-min                = $screen-md
+
+// Large screen / wide desktop
+$screen-lg                    = 1200px
+$screen-lg-min                = $screen-lg
+
+// Extra Large screen / full hd
+$screen-xl                    = 1600px
+$screen-xl-min                = $screen-xl
+
+// provide a maximum
+$screen-xs-max                = ($screen-sm-min - 1)
+$screen-sm-max                = ($screen-md-min - 1)
+$screen-md-max                = ($screen-lg-min - 1)
+$screen-lg-max                = ($screen-xl-min - 1)
+
+// Font size
+$font-size-base               = 12px
+$font-title-h1                = 44px
+$font-title-h2                = 38px
+$font-title-h3                = 32px
+$font-title-h4                = 26px
+$font-title-h5                = 20px
+$font-title-h6                = 14px
+
+// Font weight
+$font-weight-lighter          = 200
+$font-weight-light            = 300
+$font-weight-normal           = 400
+$font-weight-normal2          = 500
+$font-weight-bold             = 600
+$font-weight-bolder           = 700
+
+// Line height
+$line-height-sm               = 1.2
+$line-height-base             = 1.5
+$line-height-large            = 1.8
+$line-height-larger           = 2
+
+// Animation
+$ease                         = cubic-bezier(0.25, 0.1, 0.25, 1)
+$ease-out                     = cubic-bezier(0.215, 0.61, 0.355, 1)
+$ease-in                      = cubic-bezier(0.55, 0.055, 0.675, 0.19)
+$ease-in-out                  = cubic-bezier(0.645, 0.045, 0.355, 1)
+$ease-out-back                = cubic-bezier(0.12, 0.4, 0.29, 1.46)
+$ease-in-back                 = cubic-bezier(0.71, -0.46, 0.88, 0.6)
+$ease-in-out-back             = cubic-bezier(0.71, -0.46, 0.29, 1.46)
+$ease-out-circ                = cubic-bezier(0.08, 0.82, 0.17, 1)
+$ease-in-circ                 = cubic-bezier(0.6, 0.04, 0.98, 0.34)
+$ease-in-out-circ             = cubic-bezier(0.78, 0.14, 0.15, 0.86)
+$ease-out-quint               = cubic-bezier(0.23, 1, 0.32, 1)
+$ease-in-quint                = cubic-bezier(0.755, 0.05, 0.855, 0.06)
+$ease-in-out-quint            = cubic-bezier(0.86, 0, 0.07, 1)
+$fuck                         = cubic-bezier(.85, 0, .15, 1)
+
+$animation-duration-slower    = .5s
+$animation-duration-slow      = .3s
+$animation-duration-base      = .2s
+$animation-duration-fast      = .1s
+
+// Transition
+$transition-ease           = all $animation-duration-base $ease
+$transition-ease-in           = all $animation-duration-base $ease-in
+$transition-ease-out          = all $animation-duration-base $ease-out
+$transition-ease-in-out       = all $animation-duration-base $ease-in-out
+
+// z-index list
+$zindex-1                     = 1010
+$zindex-2                     = 1020
+$zindex-3                     = 1030
+$zindex-4                     = 1040
+$zindex-5                     = 1050
