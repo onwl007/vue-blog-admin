@@ -1,0 +1,165 @@
+@import '~@/assets/stylus/vars/index'
+@import '~@/assets/stylus/mixins/index'
+
+  $dark = #272c41
+  $dark-secondary = #1f222e
+  $text-color-dark = alpha($white, .67)
+
+  full() {
+    width 100%
+    height @width
+  }
+
+  .login-page {
+    full()
+
+    .login-bg {
+      position fixed
+      top 0
+      right 0
+      bottom 0
+      left 0
+      full()
+      // background url('~@@/static/image/login-bg.svg') center center
+      // background-color $white
+      // filter blur(2px)
+
+      .particles-background {
+        full()
+      }
+    }
+
+    .login-field {
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+      width 320px
+      height auto
+      padding 40px
+      background linear-gradient(45deg, $dark 0%, $dark-secondary 100%)
+      box-shadow 0 0 100px $dark
+      border-radius 4px
+      transition all .3s ease
+
+      .login-title {
+        margin-bottom 24px
+        text-align center
+
+        .title {
+          color $base-color
+          text-transform uppercase
+          .logo {
+            font-size 48px
+            text-shadow 0 0 40px $base-color
+          }
+        }
+
+        .name {
+          color $text-color-secondary
+        }
+
+        .avatar {
+          width 72px;
+          height 72px
+          margin-bottom 8px
+          border-radius 50%
+          border 4px solid alpha($white, .2)
+        }
+
+        .icon-avatar {
+          font-size 72px
+        }
+
+        .name {
+          margin-bottom 16px
+          font-size 16px
+          .iconfont {
+            font-size 12px
+            opacity .8
+            cursor pointer
+            transition opacity .3s $ease
+            
+            &:hover {
+              opacity 1
+            }
+          }
+        }
+      }
+
+      .login-form {
+        margin 0 -40px
+
+        .form-item {
+          position relative
+
+          & > .iconfont {
+            position absolute
+            top 8px
+            left 36px
+            color $text-color-dark
+          }
+
+          & > .iconfont:not(.icon-check) {
+            opacity .5
+            transition opacity .2s $ease-in
+          }
+
+          .icon-check {
+            left auto
+            right 30px
+            color $green
+          }
+
+          & > input {
+            width 100%
+            height 42px
+            line-height 40px
+            color: $text-color-dark;
+            margin-top -2px
+            background #32364a
+            padding 10px 65px
+            border-top 2px solid #393d52
+            border-bottom 2px solid #393d52
+            border-right none
+            border-left none
+            outline none
+            box-shadow none
+
+            &::-webkit-input-placeholder {
+              color alpha($white, .2)
+            }
+          }
+
+          &.focus {
+            & > .iconfont:not(.icon-check) {
+              opacity 1
+            }
+          }
+        }
+
+        .submit {
+          width 50%
+          margin 24px auto
+          &-btn {
+            padding 10px 50px
+            border-radius 50px
+            color $base-color
+            text-align center
+            font-weight 700
+            border 2px solid $base-color
+            text-transform uppercase
+            cursor pointer
+            transition $transition-ease
+            transition-duration .2s
+
+            &:hover {
+              background $base-color
+              color $white
+            }
+          }
+        }
+      }
+    }
+
+  }
