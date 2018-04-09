@@ -1,0 +1,83 @@
+@import '~@/assets/stylus/vars/index'
+@import '~@/assets/stylus/mixins/index'
+
+  .header {
+    flexLayout(,space-between)
+    padding-left 0
+    background-color $white
+    box-shadow 4px 4px 40px 0 alpha($black, .05)
+    border-bottom 1px solid $border-color-4
+
+    .collapse {
+      display inline-block
+      width 48px
+      height @width
+      line-height @height
+      text-align center
+      color $text-color-secondary
+      &:hover {
+        color $base-color
+        background-color alpha($base-color, .1)
+      }
+    }
+
+    .action {
+      flexLayout()
+
+      &-item {
+        display inline-block
+        width 48px
+        height @width
+        line-height @height
+        text-align center
+
+        & > div {
+          line-height 1
+        }
+
+        &:hover {
+          color $base-color
+          background-color alpha($base-color, .1)
+        }
+      }
+    }
+
+  }
+
+</style>
+
+<style lang="stylus">
+  @import '~@/assets/stylus/vars/index'
+  @import '~@/assets/stylus/mixins/index'
+
+  .header {
+    .user {
+      .el-menu-item
+      .el-submenu__title {
+        font-size $font-size-base
+        i {
+          font-size 12px
+        }
+      }
+
+      .el-submenu__title {
+        height 48px
+        line-height @height
+      }
+
+      .el-submenu {
+        .el-menu {
+          top 53px
+
+          .el-menu-item {
+            min-width auto
+            width 100px
+
+            .iconfont {
+              margin-right 5px
+            }
+          }
+        }
+      }
+    }
+  }
