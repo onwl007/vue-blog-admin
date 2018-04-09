@@ -64,4 +64,5 @@ export default {
 </script>
 
 <style lang="stylus">
+  @import 'index.styl'
 </style>
