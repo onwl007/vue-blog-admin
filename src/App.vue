@@ -74,8 +74,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-#app
-.app-container {
+#app, .app-container {
   width: 100%;
   height: @width;
 }
