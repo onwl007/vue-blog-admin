@@ -5,27 +5,18 @@
 'use strict'
 
 import Home from '@/views/Home'
-import Login from '@views/Login'
-import PageNotFound from '@views/Error/404'
+import Login from '@/views/Login'
+import PageNotFound from '@/views/Error/404'
 
-const Blog = () =>
-  import(/* webpackChunkName: "Blog" */ '@/views/Blog')
-const BlogArticles = () =>
-  import(/* webpackChunkName: "BlogArticles" */ '@/views/Blog/Articles')
-const BlogArticleDetail = () =>
-  import(/* webpackChunkName: "BlogArticleDetail" */ '@/views/Blog/ArticleDetail')
-const BlogArticleCreate = () =>
-  import(/* webpackChunkName: "BlogArticleCreate" */ '@/views/Blog/ArticleCreate')
-const BlogCategories = () =>
-  import(/* webpackChunkName: "BlogCategories" */ '@/views/Blog/Categories')
-const BlogTags = () =>
-  import(/* webpackChunkName: "BlogTags" */ '@/views/Blog/Tags')
-const Setting = () =>
-  import(/* webpackChunkName: "Setting" */ '@/views/Setting')
-const Auth = () =>
-  import(/* webpackChunkName: "Auth" */ '@/views/Auth')
-const Moment = () =>
-  import(/* webpackChunkName: "Moment" */ '@/views/Moment')
+const Blog = () => import(/* webpackChunkName: "Blog" */ '@/views/Blog')
+const BlogArticles = () => import(/* webpackChunkName: "BlogArticles" */ '@/views/Blog/Articles')
+const BlogArticleDetail = () => import(/* webpackChunkName: "BlogArticleDetail" */ '@/views/Blog/ArticleDetail')
+const BlogArticleCreate = () => import(/* webpackChunkName: "BlogArticleCreate" */ '@/views/Blog/ArticleCreate')
+const BlogCategories = () => import(/* webpackChunkName: "BlogCategories" */ '@/views/Blog/Categories')
+const BlogTags = () => import(/* webpackChunkName: "BlogTags" */ '@/views/Blog/Tags')
+const Setting = () => import(/* webpackChunkName: "Setting" */ '@/views/Setting')
+const Auth = () => import(/* webpackChunkName: "Auth" */ '@/views/Auth')
+const Moment = () => import(/* webpackChunkName: "Moment" */ '@/views/Moment')
 
 export default [{
   path: '',
