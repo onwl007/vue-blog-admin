@@ -17,7 +17,7 @@ export default {
   service: {
     url: '/',
     method: 'get',
-    baseURL: __PROD__ ? 'https://api.onwl007.me' : 'http://localhost:3001',
+    baseURL: __PROD__ ? 'https://api.onwl007.me' : 'http://localhost:8080',
     headers: {
       'X-Requested-With': 'XMLHttpRequest',
       'Accept': 'application/json'
