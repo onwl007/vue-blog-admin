@@ -1,6 +1,6 @@
 <template>
   <el-header height="48px" class="header">
-    <a class="collapse" @click="handleToggleCollapseMenue">
+    <a class="collapse" @click="handleToggleCollapseMenu">
       <i class="iconfont" :class="[`icon-${asideCollapse ? 'unfold' : 'fold'}`]"></i>
     </a>
     <div class="action">
