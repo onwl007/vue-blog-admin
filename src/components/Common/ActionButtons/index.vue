@@ -75,7 +75,7 @@ export default {
       showCategoryModal: false,
       showTagModal: false,
       showMomentModal: false,
-      categoryModal: {
+      categoryModel: {
         name: '',
         description: '',
         list: 1
