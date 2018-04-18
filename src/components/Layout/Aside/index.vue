@@ -50,7 +50,7 @@ export default {
     ...mapGetters({
       appRoutesMenu: 'app/routesMenu',
       asideCollapse: 'app/asideCollapse',
-      authinfo: 'auth/info'
+      authInfo: 'auth/info'
     }),
     defaultActive () {
       return this.$route.fullPath
